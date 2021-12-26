@@ -36,5 +36,7 @@ function makeFontWeightToken(
   if (!item.style.fontWeight) throw Error(ErrorMakeFontWeightTokensMissingWeight);
 
   const NAME = sanitizeString(item.name, camelizeTokenNames);
+  console.log('name', NAME);
+  console.log('fontWeights', fontWeights);
   fontWeights[NAME] = item.style.fontWeight;
 }
